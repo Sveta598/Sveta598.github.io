@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слайдер фотографий</title>
+    <link rel="stylesheet" href="assets/css/font/flaticon.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+</head>
+<body class="body">
+    <!--header-->
+    <header class="header">
+        <div class="header__image">   
+            <h1 class="header__title header__title_first">Спорт для детей!!!</h1>
+        </div>
+        <div class="header__comeback">
+            <a class="header__anchor" href="index.html" title="Ссылка на главную страницу">
+                Вернуться на главную страницу
+            </a>
+        </div>
+        <h2 class="header__title_second">
+            Страница со слайдером фотографий
+        </h2>
+    </header>
+    <!--main part-->
+    <main class="main">
+        <!--navigation-->
+        <nav class="navigation">
+            <div class="navigation__menuShow navigation__menuShow_first">
+                <h3 class="navigation__title navigation__title_first">Спортивные секции для детей</h3>
+                <input type="checkbox" id="firstMenu" class="navigation__switch">
+                <label for="firstMenu" class="navigation__switchConnection">
+                    <span class="navigation__text navigation__text_shown">Показать меню</span> 
+                    <span class="navigation__text navigation__text_hidden">Спрятать меню</span>
+                </label>
+            <ul class="navigation__menu navigation__menu_first">
+                    <li class="navigation__item"><a href="sportclubs_swimming.html" class="navigation__anchor" title="Секции по плаванию">Плавание</a></li>
+                    <li class="navigation__item"><a href="sportclubs_basketball.html" class="navigation__anchor" title="Секции по баскетболу">Баскетбол</a></li>
+                    <li class="navigation__item"><a href="sportclubs_gymnastics.html" class="navigation__anchor" title="Секции по гимнастике">Гимнастика</a></li>
+                    <li class="navigation__item"><a href="sportclubs_tennis.html" class="navigation__anchor" title="Секции по теннису">Теннис</a></li>
+                    <li class="navigation__item"><a href="sportclubs_chess.html" class="navigation__anchor" title="Секции по шахматам">Шахматы</a></li>
+                </ul>
+            </div>
+            <div class="navigation__menuShow navigation__menuShow_second">
+                <h3 class="navigation__title navigation__title_second">Статьи по темам</h3>
+                <input type="checkbox" id="secondMenu" class="navigation__switch">
+                <label for="secondMenu" class="navigation__switchConnection">
+                    <span class="navigation__text navigation__text_shown">Показать меню</span> 
+                    <span class="navigation__text navigation__text_hidden">Спрятать меню</span>
+                </label>
+                <ul class="navigation__menu navigation__menu_second">
+                    <li class="navigation__item"><a href="topic_babies.html" class="navigation__anchor" title="Статьи про спорт для малышей">Спорт для малышей</a></li>
+                    <li class="navigation__item"><a href="topic_basketball.html" class="navigation__anchor" title="Статьи про баскетбол">Баскетбол</a></li>
+                    <li class="navigation__item"><a href="topic_boxing.html" class="navigation__anchor" title="Статьи про бокс">Бокс</a></li>
+                    <li class="navigation__item"><a href="topic_swimming.html" class="navigation__anchor" title="Статьи про плавание">Плавание</a></li>
+                    <li class="navigation__item"><a href="topic_cycling.html" class="navigation__anchor" title="Статьи про велоспорт">Велоспорт</a></li>
+                    <li class="navigation__item"><a href="topic_chess.html" class="navigation__anchor" title="Статьи про шахматы">Шахматы</a></li>
+                    <li class="navigation__item"><a href="topic_nutrition.html" class="navigation__anchor" title="Статьи про питание">Питание</a></li>
+                    <li class="navigation__item"><a href="topic_sportswear.html" class="navigation__anchor" title="Статьи про спортивную экипировку">Спортивная одежда</a></li>
+                    <li class="navigation__item"><a href="index_previous.html" class="navigation__anchor" title="Ссылка на предыдущие статьи">Предыдущие темы</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--content-->
+        <content class="content">
+            <input type="radio" id="one" name="slider" checked class="switch switch_hidden">
+            <input type="radio" id="two" name="slider" class="switch switch_hidden">
+            <input type="radio" id="three" name="slider" class="switch switch_hidden">
+            <input type="radio" id="four" name="slider" class="switch switch_hidden">
+            <input type="radio" id="five" name="slider" class="switch switch_hidden">
+            <input type="radio" id="six" name="slider" class="switch switch_hidden">
+            <input type="radio" id="seven" name="slider" class="switch switch_hidden">
+            <input type="radio" id="eight" name="slider" class="switch switch_hidden">
+            <input type="radio" id="nine" name="slider" class="switch switch_hidden">
+            <input type="radio" id="ten" name="slider" class="switch switch_hidden">
+            <div class="slider">
+                <section class="slider__slide slider__slide_number-1">
+                    <img class="slider__image" src="img/slide41.jpg" alt="Дети стоят с мячами и гантелями" title="Дети, представляющие различные виды спорта" width="700" height="400">
+                    <label for="ten" class="slider__arrow slider__arrow_left"></label>
+                    <label for="two" class="slider__arrow slider__arrow_right"></label>
+                </section>
+                <section class="slider__slide slider__slide_number-2">
+                    <img class="slider__image" src="img/slide42.jpg" alt="Девочки занимаются гимнастикой" title="Девочки&ndash;гимнастки" width="700" height="400">
+                    <label for="one" class="slider__arrow slider__arrow_left"></label>
+                    <label for="three" class="slider__arrow slider__arrow_right"></label>
+                </section>
+                <section class="slider__slide slider__slide_number-3">
+                    <img class="slider__image" src="img/slide43.jpg" alt="Мальчики и девочки играют в футбол" title="Дети играют в футбол" width="700" height="400">
+                    <label for="two" class="slider__arrow slider__arrow_left"></label>
+                    <label for="four" class="slider__arrow slider__arrow_right"></label>
+                </section>
+                <section class="slider__slide slider__slide_number-4">
+                    <img class="slider__image" src="img/slide44.jpg" alt="Мальчики&ndash;школьники играют в гандбол" title="Мальчики играют в гандбол" width="700" height="400">
+                    <label for="three" class="slider__arrow slider__arrow_left"></label>
+                    <label for="five" class="slider__arrow slider__arrow_right"></label>
+                </section>
+                <section class="slider__slide slider__slide_number-5">
+                    <img class="slider__image" src="img/slide45.jpg" alt="Дети выполняют упражнения на фитболах в спортзале" title="Дети занимаются на фитболах" width="700" height="400">
+                    <label for="four" class="slider__arrow slider__arrow_left"></label>
+                    <label for="six" class="slider__arrow slider__arrow_right"></label>
+                </section>
+                <section class="slider__slide slider__slide_number-6">
+                    <img class="slider__image" src="img/slide46.jpg" alt="Дети занимаются плаванием с тренером" title="Дети плавают в бассейне" width="700" height="400">
+                    <label for="five" class="slider__arrow slider__arrow_left"></label>
+                    <label for="seven" class="slider__arrow slider__arrow_right"></label>
+                </section>
+                <section class="slider__slide slider__slide_number-7">
+                    <img class="slider__image" src="img/slide47.jpg" alt="Мальчик и девочка сидят на фитболах в спортзале" title="Мальчик и девочка сидят на фитболах" width="700" height="400">
+                    <label for="six" class="slider__arrow slider__arrow_left"></label>
+                    <label for="eight" class="slider__arrow slider__arrow_right"></label>
+                </section>
+                <section class="slider__slide slider__slide_number-8">
+                    <img class="slider__image" src="img/slide48.jpg" alt="Ребенок вылезает из надувной трубы в спортзале" title="Ребенок занимается на детских снарядах в спортзале" width="700" height="400">
+                    <label for="seven" class="slider__arrow slider__arrow_left"></label>
+                    <label for="nine" class="slider__arrow slider__arrow_right"></label>
+                </section>
+                <section class="slider__slide slider__slide_number-9">
+                    <img class="slider__image" src="img/slide49.jpg" alt="Девочка отбивает мяч теннисной ракеткой на корте" title="Девочка играет в теннис" width="700" height="400">
+                    <label for="eight" class="slider__arrow slider__arrow_left"></label>
+                    <label for="ten" class="slider__arrow slider__arrow_right"></label>
+                </section>
+                <section class="slider__slide slider__slide_number-10">
+                    <img class="slider__image" src="img/slide50.jpg" alt="Дети катаются на лыжах с горы" title="Дети катаются на лыжах" width="700" height="400">
+                    <label for="nine" class="slider__arrow slider__arrow_left"></label>
+                    <label for="one" class="slider__arrow slider__arrow_right"></label>
+                </section>
+                <div class="slider__pointers">
+                    <label for="one" class="slider__point slider__point_number-1"></label>
+                    <label for="two" class="slider__point slider__point_number-2"></label>
+                    <label for="three" class="slider__point slider__point_number-3"></label>
+                    <label for="four" class="slider__point slider__point_number-4"></label>
+                    <label for="five" class="slider__point slider__point_number-5"></label>
+                    <label for="six" class="slider__point slider__point_number-6"></label>
+                    <label for="seven" class="slider__point slider__point_number-7"></label>
+                    <label for="eight" class="slider__point slider__point_number-8"></label>
+                    <label for="nine" class="slider__point slider__point_number-9"></label>
+                    <label for="ten" class="slider__point slider__point_number-10"></label>
+                </div>
+            </div>
+        </content>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer__icons">
+                <a href="vk.com" class="footer__anchor footer__anchor_number-1" title="Ссылка на Vk"></a>
+                <a href="facebook.com" class="footer__anchor footer__anchor_number-2" title="Ссылка на Facebook"></a>
+                <a href="twitter.com" class="footer__anchor footer__anchor_number-3" title="Ссылка на Twitter"></a>
+                <a href="youtube.com" class="footer__anchor footer__anchor_number-4" title="Ссылка на Youtube"></a>
+                <a href="pinterest.com" class="footer__anchor footer__anchor_number-5" title="Ссылка на Pinterest"></a>
+                <a href="instagram.com" class="footer__anchor footer__anchor_number-6" title="Ссылка на Instagram"></a>
+        </div>
+        <div class="footer__copyright">
+            Copyright<sup>&copy;</sup>2020
+        </div>
+    </footer>
+    <script src="js/upButton.js"></script>
+</body>
+</html>
