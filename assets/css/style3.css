@@ -1,5 +1,6 @@
 .body {
-  width: 95vw;
+  width: 100%;
+  margin-left: 0;
 }
 
 /*header*/
@@ -506,7 +507,12 @@
 }
 
 @media screen and (max-width: 550px) {
+  .body {
+    margin: 0;
+    width: 100%;
+  }
   .header {
+    width: 100%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -547,6 +553,9 @@
     margin-left: 5%;
     color: #fff;
   }
+  .navigation {
+    width: 100%;
+  }
   .navigation__menu {
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -554,6 +563,7 @@
         grid-template-columns: 1fr 1fr;
   }
   .main {
+    padding-left: 0;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -563,6 +573,9 @@
         grid-template-areas: "article" "aside";
   }
   .aside {
+    width: 100%;
+    overflow: hidden;
+    margin-left: 0;
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: aside;
@@ -583,34 +596,49 @@
   .aside__menu {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    background: #6BE56F;
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 0;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background: #051402;
     border-radius: 10px;
-        grid-template-areas: "item-first item-second " "item-third item-fourth" "item-fifth . ";
-    width: 70%;
-    height: 100px;
-    padding-top: 15px;
+        grid-template-areas: "item-first"  "item-second" "item-third"  "item-fourth" "item-fifth";
+    width: 100%;
     margin: 0 auto;
   }
   .aside__item {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: -0.5%;
+    padding-left: 0;
     border: 2px solid #000;
     border-radius: 20px;
     background: #EF6EE0;
     line-height: 20px;
     height: 20px;
   }
-  .article__image {
+  .article {
     width: 100%;
   }
-  .article__paragraph {
+  .article__image {
+    width: 100%;
     margin-left: 0;
+  }
+  .article__paragraph {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
   }
   .article__list {
     margin-left: 0;
     padding-left: 0;
+    width: 100%;
   }
   .article__item {
     margin-left: 0;
@@ -644,6 +672,10 @@
 }
 
 @media screen and (min-width: 551px) and (max-width: 800px) {
+  .body {
+    width: 100%;
+    margin-left: 0;
+  }
   .header {
     display: -ms-grid;
     display: grid;

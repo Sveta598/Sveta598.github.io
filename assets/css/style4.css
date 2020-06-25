@@ -52,7 +52,7 @@
   border: 5px solid #fff;
   border-radius: 20px;
   background: transparent;
-  margin: 5% auto;
+  margin: 0 auto;
   width: 50%;
   color: #fff;
   text-align: center;
@@ -64,7 +64,9 @@
 }
 
 .navigation__menu {
-  display: none;
+  background: transparent;
+  margin-top: 0;
+  text-align: center;
 }
 
 .navigation__item {
@@ -73,9 +75,10 @@
 
 .navigation__anchor {
   text-decoration: none;
-  color: #044215;
+  color: #ED3BC6;
+  text-shadow: 2px -2px #390B44;
   font-style: italic;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .header__menu {
@@ -299,6 +302,8 @@
   }
   .header__image {
     width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #ED3BC6), color-stop(75%, #390B44));
+    background-image: linear-gradient(#ED3BC6 25%, #390B44 75%);
   }
   .header__title {
     margin-top: 0;
@@ -307,6 +312,11 @@
   }
   .navigation {
     width: 90%;
+  }
+  .navigation__menu {
+    display: block;
+    background: #A2DD21;
+    margin-bottom: 0;
   }
   .header__menu {
     line-height: 20px;
@@ -348,12 +358,16 @@
     grid-area: content;
   }
   .content__title {
-    margin-left: 2%;
+    margin-left: 0;
   }
   .content__menu {
-    padding-left: 2%;
+    padding-left: 0;
   }
   .content__item {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .content__text {
     margin-left: 0;
     padding-left: 0;
   }

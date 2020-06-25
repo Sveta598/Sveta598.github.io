@@ -30,7 +30,8 @@ $lgradientFourth: linear-gradient(#E3F213 25%, #13F21A 75%);
 }
 
 .body {
-    width: 95vw;
+    width: 100%;
+    margin-left: 0;
 } 
 /*header*/
 .header {
@@ -382,6 +383,10 @@ $lgradientFourth: linear-gradient(#E3F213 25%, #13F21A 75%);
     }
 }
 @media screen and (max-width: 550px) {
+    .body {
+        margin: 0;
+        width: 100%;
+    }
     .header {
         width: 100%;
         display: grid;
@@ -426,6 +431,7 @@ $lgradientFourth: linear-gradient(#E3F213 25%, #13F21A 75%);
         }
     }
     .main {
+        padding-left: 0;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 220px;
@@ -434,6 +440,9 @@ $lgradientFourth: linear-gradient(#E3F213 25%, #13F21A 75%);
             "aside";
     }
     .aside {
+        width: 100%;
+        overflow: hidden;
+        margin-left: 0;
         grid-area: aside;
         background: #051402;
         &__switch {
@@ -450,20 +459,29 @@ $lgradientFourth: linear-gradient(#E3F213 25%, #13F21A 75%);
         }
         &__menu {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            background: #6BE56F;
+            padding-inline-start: 0px;
+            margin-top: 0;
+            padding-top: 0;
+            padding-left: 0;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            background: #051402;
             border-radius: 10px;
             grid-template-areas: 
-                "item-first item-second "
-                "item-third item-fourth"
-                "item-fifth . ";
-            width: 70%;
-            height: 100px;
-            padding-top: 15px;
+                "item-first" 
+                "item-second"
+                "item-third" 
+                "item-fourth"
+                "item-fifth";
+            width: 100%;
             margin: 0 auto;
         }
         &__item {
+            width: 100%;
+            margin-top: 0;
+            padding-top: 0;
+            margin-left: -0.5%;
+            padding-left: 0;
             border: 2px solid $colorTwelve;
             border-radius: 20px;
             background: #EF6EE0;
@@ -478,12 +496,14 @@ $lgradientFourth: linear-gradient(#E3F213 25%, #13F21A 75%);
             margin-left: 0;
         }
         &__paragraph {
+            width: 100%;
             margin-left: 0;
             padding-left: 0;
         }
         &__list {
             margin-left: 0;
             padding-left: 0;
+            width: 100%;
         }
         &__item {
             margin-left: 0;
@@ -512,6 +532,10 @@ $lgradientFourth: linear-gradient(#E3F213 25%, #13F21A 75%);
    }
 }
 @media screen and (min-width: 551px) and (max-width: 800px) {
+    .body {
+        width: 100%;
+        margin-left: 0;
+    }
     .header {
         display: grid;
         grid-template-columns: 1fr;

@@ -290,6 +290,12 @@ html {
     html {
         background: $colorOne;
     }
+    .body {
+        width: 100%;
+        margin: 0;
+        padding-right: 0;
+        margin-right: 0;
+    }
     .header {
         flex-direction: column;
         &__image {
@@ -359,8 +365,9 @@ html {
             border: none;
             margin-left: 0;
             margin-right: 0;
-            width: 95vw;
+            width: 100vw;
             height: 60vw;
+            border-radius: 0;
         }
         &__slide {
             width: 100%;

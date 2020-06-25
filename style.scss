@@ -16,6 +16,7 @@ $lstyleType: none;
 $rgradientFirst: radial-gradient(#1AA5B2 30%, #1F29EF 60%, transparent 100%);
 $rgradientSecond: radial-gradient(#EF40E9 30%, #EF071E 60%, transparent 100%);
 $lgradientThird: linear-gradient(to right, #0D078E 25%, #2E39A0 50%, #8480cc 100%);
+$lgradientFourth: linear-gradient(#E3F213 25%, #13F21A 75%);
 $colorFour: #EF071E;
 $colorFive: #000;
 $colorSix: #5C087A;
@@ -301,6 +302,10 @@ $colorSix: #5C087A;
 }
 
 @media screen and (max-width: 500px) {
+    .body {
+        padding: 0;
+        margin: 0;
+    }
     .header {
         flex-direction: column;
         &__title {
@@ -308,7 +313,7 @@ $colorSix: #5C087A;
             margin-top: 100px;
         }
         &__slider {
-            background-image: $imageSmall;
+            background-image: $lgradientFourth;
             animation: none;
             flex-basis: 240px;
         }
@@ -336,7 +341,8 @@ $colorSix: #5C087A;
             padding-left: 0;
         }
         &__item {
-            flex-basis: 90%;
+            flex-basis: 98%;
+            margin-left: 0;
         }
         &__anchor {
             font-size: 1.1em;
@@ -346,6 +352,7 @@ $colorSix: #5C087A;
         }
     }
     .footer {
+        height: 200px;
         &__copyright {
             display: none;
         }

@@ -412,6 +412,12 @@ html {
   html {
     background: #fff;
   }
+  .body {
+    width: 100%;
+    margin: 0;
+    padding-right: 0;
+    margin-right: 0;
+  }
   .header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -490,8 +496,9 @@ html {
     border: none;
     margin-left: 0;
     margin-right: 0;
-    width: 95vw;
+    width: 100vw;
     height: 60vw;
+    border-radius: 0;
   }
   .slider__slide {
     width: 100%;

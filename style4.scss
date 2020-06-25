@@ -15,6 +15,7 @@ $width2: -237px;
 $height2: 8px;
 $colorFive: #9E0F33;
 $transition: all 1s;
+$lgradientFirst: linear-gradient(#ED3BC6 25%, #390B44 75%);
 @mixin imagePath2 {
     background-image: url('../../img/sports.png');
     background-repeat: no-repeat;            
@@ -67,7 +68,7 @@ $transition: all 1s;
     border: 5px solid $colorOne;
     border-radius: 20px;
     background: transparent;
-    margin: 5% auto;
+    margin: 0 auto;
     width: 50%;
     color: $colorOne;
     text-align: center;
@@ -76,16 +77,19 @@ $transition: all 1s;
     cursor: pointer;
     transition: $transition;
     &__menu {
-        display: none;
+        background: transparent;
+        margin-top: 0;
+        text-align: center;
     }
     &__item {
         list-style-type: none;
     }
     &__anchor {
         text-decoration: none;
-        color: #044215;
+        color: #ED3BC6;
+        text-shadow: 2px -2px #390B44;
         font-style: $fontStyle;
-        font-size: 0.8em;
+        font-size: 1em;
     }
 }
 .header {
@@ -259,6 +263,7 @@ $transition: all 1s;
         grid-row-gap: 0;
         &__image {
             width: 100%;
+            background-image: $lgradientFirst;
         }
         &__title {
             margin-top: 0;
@@ -268,6 +273,11 @@ $transition: all 1s;
     }
     .navigation {
         width: 90%;
+        &__menu {
+            display: block;
+            background: #A2DD21;
+            margin-bottom: 0;
+        }
     }
     .header {
         &__menu {
