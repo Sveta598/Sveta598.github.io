@@ -31,7 +31,6 @@ $colorSix: #5C087A;
 .header {
    text-align: center;
    display: flex;
-/*}*/
     &__slider {
         flex-basis: 70%;
         height: 400px;
@@ -84,19 +83,6 @@ $colorSix: #5C087A;
     .navigation {
         background: $lgradientSecond;
         text-align: center;
-    /*}*/
-    /*.navigation__anchor_main {
-        text-decoration: $textDecoration;
-        color: $colorOne;
-        font-family: Arial, sans-serif;
-        font-weight: $fontWeight;
-        display: inline-block;
-        margin-top: 5px;
-    }
-    .navigation__anchor_main:hover,
-    .navigation__anchor_main:active {
-        background: #2BF210;
-    }*/
         &__title {
             color: $colorOne;
             font-size: 1.2em;
@@ -142,7 +128,7 @@ $colorSix: #5C087A;
             }
         }
     }
-    /*main part*/
+/*main part*/
 .main {
     display: flex;
 }
@@ -150,7 +136,6 @@ $colorSix: #5C087A;
 .aside {
     background-image: $lgradientThird;
     text-align: center;
-/*}*/
     &__title {
         margin: 10px;
         color: $colorOne;
@@ -207,7 +192,6 @@ $colorSix: #5C087A;
 /*content*/
 .article {
     flex-grow: 1;
-/*}*/
     &__menu {
         display: flex;
         flex-wrap: wrap;
@@ -267,15 +251,6 @@ $colorSix: #5C087A;
         border: 2px solid $colorFour;
     }
 }
-/*.article__anchor_last {
-    text-decoration: $textDecoration;
-    font-family: Helvetica, sans-serif;
-    color: $colorSix;
-}
-.article__anchor_last:hover,
-.article__anchor_last:active {
-    color: $colorFour;
-}*/
 /*footer*/
 .footer {
     height: 130px;
@@ -283,7 +258,6 @@ $colorSix: #5C087A;
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 10px;
-/*}*/
     &__copyright,
     &__shareInfo,
     &__icons {
@@ -325,16 +299,10 @@ $colorSix: #5C087A;
         text-shadow: 2px 2px #EB77EF;
     }
 }
-/*.footer__icons_lower {
-  flex-basis: 60px;
-  margin-top: 5px;
-  display: flex;
-  color: $colorOne;
-} */
+
 @media screen and (max-width: 500px) {
     .header {
         flex-direction: column;
-    /*}*/
         &__title {
             font-size: 2em;
             margin-top: 100px;
@@ -363,7 +331,6 @@ $colorSix: #5C087A;
     }
     .article {
         flex-basis: 100%;
-    /*}*/
         &__menu {
             justify-content: center;
             padding-left: 0;
@@ -394,7 +361,6 @@ $colorSix: #5C087A;
 @media screen and (min-width: 501px) and (max-width: 800px) {
     .header{
         flex-direction: column;
-    /*}*/
         &__title {
             font-size: 3em;
         }
@@ -420,7 +386,6 @@ $colorSix: #5C087A;
     }
     .aside {
         order: 2;
-    /*}*/
         &__menu {
             display: flex;
             flex-wrap: wrap;
@@ -440,7 +405,6 @@ $colorSix: #5C087A;
     }
     .article {
         order: 1;
-    /*}*/
         &__item {
             flex-basis: 45%;
         }

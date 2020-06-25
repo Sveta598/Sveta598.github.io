@@ -30,7 +30,7 @@ $lgradientFourth: linear-gradient(#E3F213 25%, #13F21A 75%);
 }
 
 .body {
-    margin: 0;
+    width: 95vw;
 } 
 /*header*/
 .header {
@@ -328,10 +328,10 @@ $lgradientFourth: linear-gradient(#E3F213 25%, #13F21A 75%);
     &__text {
         text-align: justify;
     }
-    &_paragraph {
+    &__paragraph {
         margin: 5px 10px 5px 10px;
     }
-    &_list {
+    &__list {
         text-align: center;
         margin: 10px 20px 10px 20px;
     }
@@ -473,6 +473,17 @@ $lgradientFourth: linear-gradient(#E3F213 25%, #13F21A 75%);
         &__image {
             width: 100%;
         }
+        &__paragraph {
+            margin-left: 0;
+        }
+        &__list {
+            margin-left: 0;
+            padding-left: 0;
+        }
+        &__item {
+            margin-left: 0;
+            padding-left: 0;
+        }
     }
    .footer {
     grid-template-rows: 150px;
@@ -482,8 +493,16 @@ $lgradientFourth: linear-gradient(#E3F213 25%, #13F21A 75%);
         &__copyright {
             display: none;
         }
+        &__menu {
+            padding-left: 0;
+            grid-template-rows: 100px;
+            grid-template-columns: 100px 100px 100px;
+        }
         &__icons {
             grid-area: icons;
+        }
+        &__anchor {
+            margin-left: -10px;
         }
    }
 }
