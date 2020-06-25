@@ -17,11 +17,11 @@ $colorSix: #07031C;
 $slides: 10;
 $colorSeven: #ED3BC6;
 $colorEight: #390B44;
-$top: 165px;
 $border: 10px solid transparent;
 $colorTen: #38CFED;
 $width: -279px;
 $height: -139px;
+$lgradientFirst: linear-gradient(#ED3BC6 25%, #390B44 75%);
 @mixin imagePath {
     background-image: url('../../img/icons.png');
     background-repeat: no-repeat;            
@@ -36,7 +36,7 @@ html {
     background: $colorNine;
 }
 .body {
-    width: 95vw;
+    margin: 0;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -48,7 +48,7 @@ html {
     flex-wrap: wrap;
     &__image {
         flex-basis: 65%;
-        height: 300px;
+        width: 100%;
         background-image: $imageFirst;
         background-size: 100% 300px;
         background-repeat: no-repeat;
@@ -112,15 +112,6 @@ html {
             margin-top: 0;
         }
     }
-    &__text {
-        display: none;
-    }
-    &__switch:not(:checked) ~ .navigation__switchConnection>.navigation__text_shown {
-        display: inline-block;
-    }
-    &__switch:checked ~ .navigation__switchConnection>.navigation__text_hidden {
-        display: inline-block;
-    }
     &__menu {
         &_first {
             border: 2px dotted $colorFive;
@@ -130,7 +121,6 @@ html {
             padding-left: 0;
             line-height: 40px;
             width: 180px;
-            margin-left: -35vw;
             transition: $transition;
         }
         &_second {
@@ -139,16 +129,9 @@ html {
             border-radius: 50px;
             text-align: center;
             padding-left: 0;
-            width: 240px;
-            margin-left: -45vw;
+            margin-left: 0;
             transition: $transition;
         }
-    }
-    &__switch:checked ~ .navigation__menu_first {
-        margin-left: 0;
-    }
-    &__switch:checked ~ .navigation__menu_second {
-        margin-left: -3vw;
     }
     &__item {
         list-style-type: $lstyleType;
@@ -186,6 +169,7 @@ html {
     .switch:nth-of-type(#{$i}):checked ~ .slider>.slider__slide_number-#{$i} {
         display: block;
         width: 70%;
+        position: relative;
     }
 }
 .slider {
@@ -202,7 +186,7 @@ html {
             border: $border;
             border-right: 10px solid $colorEight;
             position: absolute;
-            top: $top;
+            top: 165px;
             left: 0;
         } 
         &_right {
@@ -211,7 +195,7 @@ html {
             border: $border;
             border-left: 10px solid $colorEight;
             position: absolute;
-            top: $top;
+            top: 165px;
             left: 620px;
         } 
     }
@@ -239,7 +223,6 @@ html {
     &__icons {
         display: flex;
         flex-wrap: wrap;
-        height: 200px;
         align-items: center;
         justify-content: space-around;
     }
@@ -297,32 +280,42 @@ html {
         margin-right: 0;
     }
     .header {
+        width: 98%;
+        padding-bottom: 0;
         flex-direction: column;
         &__image {
-            height: 500px;
+            background-image: $lgradientFirst;
         }
         &__title {
-            margin-top: 120px;
-            font-size: 3em;
+            margin-top: 0;
+            font-size: 150%;
+            color: $colorOne;
+            &_second {
+                font-size: 1em;
+            }
         }
         &__anchor {
-            height: 40px;
-            width: 300px;
+            width: 98%;
             margin-top: 0;
-            padding-top: 0;
-            line-height: 40px;
+            padding: 0;
+            line-height: 140%;
+            margin: 0;
+            height: 10%;
+            font-size: 80%;
+            border-radius: 40px;
         }
     }
     .main {
         flex-direction: column;
     }
     .navigation {
+        width: 98%;
         order: 2;
         text-align: center;
         &__title {
             color: #17631F;
-            text-shadow: -2px -2px#8DD10E;
-            font-size: 1.5em;
+            text-shadow: -1px -1px#8DD10E;
+            font-size: 100%;
             &_first {
                 margin-top: 10px;
             }
@@ -344,17 +337,24 @@ html {
         }
         &__menu {
             &_first {
-                margin-left: 25%;
+                width: 100%;
+                margin-left: 0;
+                line-height: 100%;
             }
             &_second {
-                margin-left: 20%;
+                width: 100%;
+                margin-left: 0;
+                line-height: 100%;
             }
+        }
+        &__anchor {
+            font-size: 100%;
         }
     }
     .content {
         order: 1;
         overflow: hidden;
-        width: 100%;
+        width: 98%;
     }
     .slider {
         margin-top: 20px;
@@ -374,16 +374,21 @@ html {
             margin-right: 0;
         }
         &__arrow {
-            &_left,
+            &_left {
+                top: 40%;
+                left: -2%;
+            }
             &_right {
-            display: none;
+                top: 40%;
+                left: 138%;
             }
         }
         &__pointers {
             margin-bottom: 5%;
             margin-top: 0;
-            margin-left: 25%;
-            width: 300px;
+            margin-left: 0;
+            width: 100%;
+            justify-content: center;
         }
     }
     .footer {
@@ -394,6 +399,9 @@ html {
             flex-basis: 70px;
             height: 70px;
             box-shadow: none;
+        }
+        &_copyright {
+            font-size: 20%;
         }
     }
 }
@@ -415,6 +423,7 @@ html {
         flex-direction: column;
     }
     .navigation {
+        width: 98%;
         order: 2;
         text-align: center;
         &__title {
@@ -422,16 +431,17 @@ html {
             margin-top: 10px;
             }
         }
-        &__switch:checked ~ .navigation__menu_first {
-            margin-left: 40%;
-        }
-        &__switch:checked ~ .navigation__menu_second {
-            margin-left: 35%;
+        &__menu {
+            &_first {
+                width: 100%;
+            }
+            &_second {
+                width: 100%;
+            }
         }
     }
     .content {
         order: 1;
-        width: 100%;
     }
     .slider {
         margin-left: 0;
@@ -443,10 +453,14 @@ html {
             height: 50vw;
         }
         &__arrow {
-            &_left,
+            &_left {
+                top: 40%;
+                left: 0;
+            }
             &_right {
-                display: none;
-            } 
+                top: 40%;
+                left: 133%;
+            }
         }
         &__pointers {
             margin-bottom: 2%;
