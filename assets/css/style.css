@@ -11,8 +11,8 @@
 }
 
 .header__slider {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
   height: 400px;
   background-color: #33313A;
   -webkit-transition: all 1s;
@@ -62,8 +62,8 @@
 }
 
 .header__banner {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(25%, #8480cc), color-stop(50%, #2E39A0), to(#0D078E));
   background-image: linear-gradient(to right, #8480cc 25%, #2E39A0 50%, #0D078E 100%);
   padding-top: 150px;

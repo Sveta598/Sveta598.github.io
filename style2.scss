@@ -50,7 +50,7 @@ html {
         flex-basis: 65%;
         width: 100%;
         background-image: $imageFirst;
-        background-size: 100% 300px;
+        /*background-size: 100% 300px;*/
         background-repeat: no-repeat;
     }
     &__title {
@@ -116,21 +116,16 @@ html {
         &_first {
             border: 2px dotted $colorFive;
             background: $rgradientSecond;
-            border-radius: 50px;
             text-align: center;
             padding-left: 0;
             line-height: 40px;
-            width: 180px;
-            transition: $transition;
         }
         &_second {
             border: 2px dotted $colorFive;
             background: $rgradientThird;
-            border-radius: 50px;
             text-align: center;
             padding-left: 0;
             margin-left: 0;
-            transition: $transition;
         }
     }
     &__item {
@@ -177,7 +172,6 @@ html {
         border: 1px solid $colorSeven;
         border-radius: 10px;
         width: 640px; 
-        height: 400px;
     }
     &__arrow {
         &_left {
@@ -340,11 +334,13 @@ html {
                 width: 100%;
                 margin-left: 0;
                 line-height: 100%;
+                border-radius: 50px;
             }
             &_second {
                 width: 100%;
                 margin-left: 0;
                 line-height: 100%;
+                border-radius: 50px;
             }
         }
         &__anchor {
@@ -366,7 +362,6 @@ html {
             margin-left: 0;
             margin-right: 0;
             width: 100vw;
-            height: 60vw;
             border-radius: 0;
         }
         &__slide {
@@ -409,7 +404,8 @@ html {
     .header {
         flex-direction: column;
         &__image {
-            height: 500px;
+            width: 80%;
+            margin: auto;
         }
         &__anchor {
             height: 40px;
@@ -434,9 +430,11 @@ html {
         &__menu {
             &_first {
                 width: 100%;
+                border-radius: 50px;
             }
             &_second {
                 width: 100%;
+                border-radius: 50px;
             }
         }
     }
@@ -444,13 +442,12 @@ html {
         order: 1;
     }
     .slider {
-        margin-left: 0;
+        margin-left: 2%;
         &__image {
             border: none;
             margin-left: 0;
             margin-right: 0;
             width: 95vw;
-            height: 50vw;
         }
         &__arrow {
             &_left {

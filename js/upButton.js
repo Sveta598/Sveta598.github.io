@@ -9,7 +9,7 @@ function scrollFunction() {
 //Выбираем из DOM нашу кнопку
 let button = document.querySelector(".upButton");
 //условия координат скрола
-if (document.body.scrollTop > 480 || document.documentElement.scrollTop > 480) {
+if (document.body.scrollTop > 360 || document.documentElement.scrollTop > 360) {
     button.style.display = "block";
 } else {
     button.style.display = "none";

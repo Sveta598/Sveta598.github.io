@@ -33,7 +33,7 @@ $colorSix: #5C087A;
    text-align: center;
    display: flex;
     &__slider {
-        flex-basis: 70%;
+        flex-basis: 60%;
         height: 400px;
         background-color: $colorThree;
         transition: $transition;
@@ -63,7 +63,7 @@ $colorSix: #5C087A;
         margin-top: 150px;
     }
     &__banner {
-        flex-basis: 30%;
+        flex-basis: 40%;
         background-image: $lgradientFirst;
         padding-top: 150px;
     }   

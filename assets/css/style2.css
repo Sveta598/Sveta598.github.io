@@ -29,7 +29,7 @@ html {
       flex-basis: 65%;
   width: 100%;
   background-image: url("../../img/children.jpg");
-  background-size: 100% 300px;
+  /*background-size: 100% 300px;*/
   background-repeat: no-repeat;
 }
 
@@ -108,24 +108,17 @@ html {
 .navigation__menu_first {
   border: 2px dotted #33313A;
   background: radial-gradient(circle at top left, #5b4ffc, #df0253);
-  border-radius: 50px;
   text-align: center;
   padding-left: 0;
   line-height: 40px;
-  width: 180px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .navigation__menu_second {
   border: 2px dotted #33313A;
   background: radial-gradient(circle at top right, #5b4ffc, #df0253);
-  border-radius: 50px;
   text-align: center;
   padding-left: 0;
   margin-left: 0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .navigation__item {
@@ -231,7 +224,6 @@ html {
   border: 1px solid #ED3BC6;
   border-radius: 10px;
   width: 640px;
-  height: 400px;
 }
 
 .slider__arrow_left {
@@ -475,11 +467,13 @@ html {
     width: 100%;
     margin-left: 0;
     line-height: 100%;
+    border-radius: 50px;
   }
   .navigation__menu_second {
     width: 100%;
     margin-left: 0;
     line-height: 100%;
+    border-radius: 50px;
   }
   .navigation__anchor {
     font-size: 100%;
@@ -502,7 +496,6 @@ html {
     margin-left: 0;
     margin-right: 0;
     width: 100vw;
-    height: 60vw;
     border-radius: 0;
   }
   .slider__slide {
@@ -551,7 +544,8 @@ html {
             flex-direction: column;
   }
   .header__image {
-    height: 500px;
+    width: 80%;
+    margin: auto;
   }
   .header__anchor {
     height: 40px;
@@ -578,9 +572,11 @@ html {
   }
   .navigation__menu_first {
     width: 100%;
+    border-radius: 50px;
   }
   .navigation__menu_second {
     width: 100%;
+    border-radius: 50px;
   }
   .content {
     -webkit-box-ordinal-group: 2;
@@ -588,14 +584,13 @@ html {
             order: 1;
   }
   .slider {
-    margin-left: 0;
+    margin-left: 2%;
   }
   .slider__image {
     border: none;
     margin-left: 0;
     margin-right: 0;
     width: 95vw;
-    height: 50vw;
   }
   .slider__arrow_left {
     top: 40%;
